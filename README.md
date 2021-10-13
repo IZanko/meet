@@ -37,57 +37,79 @@ So that I can easily see what each city is doing.
 
 ### FEATURE 1: FILTER EVENTS BY CITY
 #### SCENARIO 1: WHEN USER HASN’T SEARCHED FOR A CITY, SHOW UPCOMING EVENTS FROM ALL CITIES.
-Given user hasn’t searched for any city
-When the user opens the app
-Then the user should see a list of all upcoming events
+**Given** user hasn’t searched for any city  
+
+**When** the user opens the app  
+
+**Then** the user should see a list of all upcoming events
 #### SCENARIO 2: USER SHOULD SEE A LIST OF SUGGESTIONS WHEN THEY SEARCH FOR A CITY.
-Given the main page is open
-When user starts typing in the city textbox
-Then the user should see a list of cities (suggestions) that match what they’ve typed
+**Given** the main page is open  
+
+**When** user starts typing in the city textbox  
+
+**Then** the user should see a list of cities (suggestions) that match what they’ve typed
 #### SCENARIO 3: USER CAN SELECT A CITY FROM THE SUGGESTED LIST.
-Given the user was typing “Berlin” in the city textbox and the list of suggested cities is showing
-When the user selects a city (e.g., “Berlin, Germany”) from the list
-Then their city should be changed to that city (i.e., “Berlin, Germany”) and the user should receive a list of upcoming events in that city
+**Given** the user was typing “Berlin” in the city textbox and the list of suggested cities is showing  
+
+**When** the user selects a city (e.g., “Berlin, Germany”) from the list  
+
+**Then** their city should be changed to that city (i.e., “Berlin, Germany”) and the user should receive a list of upcoming events in that city
 
 ### FEATURE 2: SHOW/HIDE AN EVENT'S DETAILS
 #### SCENARIO 1: AN EVENT ELEMENT IS COLLAPSED BY DEFAULT
-Given events are displaying
-When user selects one specific event,
-Then show collapsed event element by default
+**Given** events are displaying  
+
+**When** user selects one specific event,  
+
+**Then** show collapsed event element by default
 #### SCENARIO 2: USER CAN EXPAND AN EVENT TO SEE ITS DETAILS
-Given event is displayed collapsed
-When user clicks on “show more”
-Then expand the event to show more details about that event
+**Given** event is displayed collapsed  
+
+**When** user clicks on “show more”  
+
+**Then** expand the event to show more details about that event
 #### SCENARIO 3: USER CAN COLLAPSE AN EVENT TO HIDE ITS DETAILS
-Given event’s details are expanded
-When user clicks “show less”
-Then collapse the event to show less details about that event
+**Given** event’s details are expanded  
+
+**When** user clicks “show less”  
+
+**Then** collapse the event to show less details about that event
 
 ### FEATURE 3: SPECIFY NUMBER OF EVENTS TO DISPLAY
 #### SCENARIO 1: WHEN USER HASN’T SPECIFIED A NUMBER, 32 IS THE DEFAULT NUMBER
-Given main page is open
-When user searches for a city
-Then show a default number of 32 events
+**Given** main page is open  
+
+**When** user searches for a city  
+
+**Then** show a default number of 32 events
 #### SCENARIO 2: USER CAN CHANGE THE NUMBER OF EVENTS THEY WANTS TO SEE
-Given city has been searched
-When user clicks “change number of events displayed”
-Then allow user to input the number of events they would like to see
+**Given** city has been searched  
+
+**When** user clicks “change number of events displayed”  
+
+**Then** allow user to input the number of events they would like to see
 
 ### FEATURE 4: USE THE APP WHEN OFFLINE
 #### SCENARIO 1: SHOW CACHED DATA WHEN THERE’S NO INTERNET CONNECTION
-Given a search has been cached
-When user opens event
-Then show cached data
+**Given** a search has been cached  
+
+**When** user opens event  
+
+**Then** show cached data
 #### SCENARIO 2: SHOW ERROR WHEN USER CHANGES THE SETTINGS (CITY, TIME RANGE)
-Given no internet connection
-When user inputs new search
-Then show error that it is not possible
+**Given** no internet connection  
+
+**When** user inputs new search  
+
+**Then** show error that it is not possible
 
 ### FEATURE 5: DATA VISUALIZATION
 #### SCENARIO 1: SHOW A CHART WITH THE NUMBER OF UPCOMING EVENTS IN EACH CITY
-Given main page is open
-When user clicks “overview”
-Then show a chart with the number of events in each city
+**Given** main page is open   
+
+**When** user clicks “overview”  
+
+**Then** show a chart with the number of events in each city
 
 ## Project dependencies:
 
