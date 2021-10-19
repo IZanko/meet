@@ -51,8 +51,8 @@ So that I can easily see what each city is doing.
 
 ### FEATURE 2: SHOW/HIDE AN EVENT'S DETAILS
 #### SCENARIO 1: AN EVENT ELEMENT IS COLLAPSED BY DEFAULT
-**Given** events are displaying<br>
-**When** user selects one specific event,<br>
+**Given** user has not selected an event<br>
+**When** user views a list of events,<br>
 **Then** show collapsed event element by default
 #### SCENARIO 2: USER CAN EXPAND AN EVENT TO SEE ITS DETAILS
 **Given** event is displayed collapsed<br>
