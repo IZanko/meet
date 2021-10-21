@@ -47,7 +47,9 @@ So that I can easily see what each city is doing.
 #### SCENARIO 3: USER CAN SELECT A CITY FROM THE SUGGESTED LIST.
 **Given** the user was typing “Berlin” in the city textbox and the list of suggested cities is showing<br>
 **When** the user selects a city (e.g., “Berlin, Germany”) from the list<br>
-**Then** their city should be changed to that city (i.e., “Berlin, Germany”) and the user should receive a list of upcoming events in that city
+**Then** their city should be changed to that city (i.e., “Berlin, Germany”) and the user should receive a list of upcoming events in that city<br>
+And the list of suggestions should disappear<br>
+And the user should receive a list of upcoming events in that city
 
 ### FEATURE 2: SHOW/HIDE AN EVENT'S DETAILS
 #### SCENARIO 1: AN EVENT ELEMENT IS COLLAPSED BY DEFAULT

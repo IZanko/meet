@@ -15,13 +15,15 @@ class NumberOfEvents extends Component {
 
   render() {
     return (
-      <input
-        type='number'
-        className='NumberOfEventsShowing'
-        value={this.state.NumberOfEvents}
-        onChange={(e) => this.handleInputChanged(e)}
-      >Select Number of Events to Display (Default 32)
-      </input>
+      <div>
+        <label>Number of Events Displaying </label>
+        <input
+          type='number'
+          className='NumberOfEventsShowing'
+          value={this.state.numberOfEventsShowing}
+          onChange={(e) => this.handleInputChanged(e)}
+        />
+      </div>
     )
   }
 
